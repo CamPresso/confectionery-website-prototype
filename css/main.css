@@ -54,11 +54,10 @@ nav a:hover {
   color: #fff;
 }
 
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 90em) {
 
-  nav li {
-    display: inline-block;
-    text-align: center;
+  html {
+    font-size: 130%;
   }
 
 }
