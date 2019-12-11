@@ -1,9 +1,3 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -19,17 +13,31 @@ html {
 
 body {
   margin: 0;
+  background-color: #DDF7FE;
 }
 
 header {
   padding: .5rem 0;
-  background-color: #ccc;
+  background-color: #6BC9E2;
   text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 h1 {
+  font-family: serif;
   margin: 0 0 .5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  font-size: 0.80em;
 }
 
 nav ul {
@@ -40,24 +48,244 @@ nav ul {
 
 nav li {
   text-align: left;
+  display: inline-block;
 }
 
 nav a {
+  font-weight: bold;
   display: block;
   padding: .5em .75em;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #333;
+  background-color: #62BDD4;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  font-family: serif;
+  margin: 1rem;
+  color: #62BDD4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  padding: 1em 0;
+  background-color: #6BC9E2;
   color: #fff;
 }
 
-@media only screen and (min-width: 90em) {
+.footer h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer ul {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.links {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.copyright {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.column1 img {
+  margin-bottom: .5rem;
+}
+
+.column2 img {
+  margin-bottom: .5rem;
+}
+
+.image1c1 {
+  position: relative;
+}
+
+.image2c1 {
+  position: relative;
+}
+
+.image1c2 {
+  position: relative;
+}
+
+.image2c2 {
+  position: relative;
+}
+
+.image3c2 {
+  position: relative;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  padding: .4em .75em .3em;
+  display: inline-block;
+  border-radius: 8px;
+  border: 3px solid #30788B;
+  background-color: #6BC9E2;
+}
+
+.btn:hover {
+  background-color: #6BC9E2;
+}
+
+.btn-primary:hover {
+  background-color: #30788B;
+}
+
+.columns .btn {
+  position: absolute;
+  top: .5em;
+  left: .75em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .column1 {
+    display: flex;
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .image1c1,
+  .image2c1 {
+    width: 50%;
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .column1 img {
+    width: 100%;
+    display: block;
+  }
+
+  .column2 {
+    display: flex;
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .image1c2,
+  .image2c2,
+  .image3c2 {
+    width: 33.333%;
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .column2 img {
+    width: 100%;
+    display: block;
+  }
+
+  nav {
+    font-size: 1em;
+  }
+
+  .center {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
 
   html {
-    font-size: 130%;
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  h1,
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+
+  .column1 {
+    display: block;
+    padding-right: 0;
+  }
+
+  .image1c1,
+  .image2c1,
+  .image1c2,
+  .image2c2,
+  .image3c2 {
+    width: 100%;
+    display: block;
+  }
+
+  .column1 img {
+    width: 100%;
+  }
+
+  .column1 img:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .column2 {
+    display: block;
+    padding-left: 0;
+  }
+
+  .column2 img {
+    width: 100%;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    font-size: 1em;
   }
 
 }
