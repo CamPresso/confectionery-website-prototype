@@ -29,7 +29,7 @@ header {
   margin-bottom: .5rem;
 }
 
-img {
+.img-flex {
   display: block;
   width: 100%;
 }
@@ -231,7 +231,7 @@ p {
     margin-left: 6rem;
     margin-right: 6rem;
     color: #62bdd4;
-    font-size: 1rem
+    font-size: 1rem;
   }
 
   .box {
