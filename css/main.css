@@ -162,6 +162,10 @@ p {
   left: .75em;
 }
 
+.media {
+  width: 0%;
+}
+
 @media only screen and (min-width: 25em) {
 
   .column1 {
@@ -178,25 +182,6 @@ p {
   }
 
   .column1 img {
-    width: 100%;
-    display: block;
-  }
-
-  .column2 {
-    display: flex;
-    padding-left: .25rem;
-    padding-right: .25rem;
-  }
-
-  .image1c2,
-  .image2c2,
-  .image3c2 {
-    width: 33.333%;
-    padding-left: .25rem;
-    padding-right: .25rem;
-  }
-
-  .column2 img {
     width: 100%;
     display: block;
   }
@@ -244,7 +229,7 @@ p {
     top: 25%;
     padding: 0rem 1rem .5rem;
     background-color: #62BDD4;
-    height: 13rem;
+    height: 11rem;
     width: 5rem;
     z-index: 1;
     font-size: 1.25rem;
@@ -252,6 +237,48 @@ p {
     color: #000;
     border: 3px solid #30788B;
   }
+
+  .media {
+    margin-top: 1rem;
+    width: 100%
+  }
+
+  .youtube:hover {
+    border-radius: 18px;
+  }
+
+  .facebook:hover {
+    border-radius: 18px;
+  }
+
+  .instagram:hover {
+    border-radius: 18px;
+  }
+
+  .media li img:hover {
+     opacity: 50%;
+     border-raduis: 20px;
+     background-color: #000;
+    }
+
+    .column2 {
+      display: flex;
+      padding-left: .25rem;
+      padding-right: .25rem;
+    }
+
+    .image1c2,
+    .image2c2,
+    .image3c2 {
+      width: 33.333%;
+      padding-left: .25rem;
+      padding-right: .25rem;
+    }
+
+    .column2 img {
+      width: 100%;
+      display: block;
+    }
 
 }
 
@@ -324,6 +351,10 @@ p {
     margin-left: 6rem;
     margin-right: 6rem;
     color: #62BDD4;
+  }
+
+  .media {
+    margin-top: 0.8rem;
   }
 
 }
